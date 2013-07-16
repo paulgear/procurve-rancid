@@ -1,0 +1,9 @@
+web-management
+web-management ssl 
+aaa authentication ssh enable local
+ip ssh
+ip ssh filetransfer
+no telnet-server 
+no tftp client
+no tftp server
+

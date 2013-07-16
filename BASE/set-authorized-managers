@@ -1,0 +1,5 @@
+ip authorized-managers 10.0.1.1 255.255.255.255
+ip authorized-managers 10.0.2.2 255.255.255.255
+ip authorized-managers 10.0.3.0 255.255.255.0 
+ip authorized-managers 10.4.0.0 255.255.0.0 
+

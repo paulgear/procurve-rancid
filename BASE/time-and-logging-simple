@@ -1,0 +1,5 @@
+sntp server 10.2.3.4
+sntp unicast
+timesync sntp
+time timezone 600
+

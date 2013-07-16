@@ -1,0 +1,4 @@
+snmp-server contact "My Email <nobody@example.com>" 
+snmp-server community public restricted
+snmp-server host 10.1.2.3 public
+

@@ -1,0 +1,37 @@
+# base switch setup - no need to run multiple times unless something changes
+config
+
+hostname "sw1" 
+snmp-server location "LOCATION" 
+
+interface UPLINK
+   name "up" 
+exit
+
+ip default-gateway 10.VLAN.0.1 
+
+crypto key generate ssh
+crypto key generate cert 1024
+crypto host-cert generate self-signed
+
+snmpv3 enable 
+snmpv3 user root auth sha PASSWORD priv PASSWORD
+snmpv3 group managerpriv user root sec-model ver3
+no snmpv3 user initial
+snmpv3 restricted-access
+
+password manager user-name root
+password operator user-name operator
+
+# Management VLAN 
+vlan 500
+name mgt
+ip addr dhcp
+tagged UPLINK
+exit
+primary-vlan 500
+
+# Distribution switches
+spanning-tree priority PRIORITY
+
+write mem

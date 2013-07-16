@@ -1,0 +1,8 @@
+#ID,Name,QoS,Options,Obsoletes
+1,default,4,LEAVEIP,
+# Voice VLAN
+30,voip,5,voice LEAVEIP,
+# Building 1
+100,bld1,4,NOIP,1000 1001 1002
+# Management VLAN
+500,mgt,6,DHCP NOIGMP,

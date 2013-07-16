@@ -1,0 +1,7 @@
+# WARNING: All switch names MUST be preceded and followed by a space. 
+#ID     Switches 
+30      sw1 sw2 sw3 sw4 
+100	sw1 sw2 
+500     ALL 
+1       sw1 sw2 sw3 
+#Leave VLAN 1 last
